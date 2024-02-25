@@ -1,0 +1,30 @@
+{
+  "generated_path": "application-client/output/generated/",
+  "generated_path_prefix": "_output-suite-run",
+  "final_result": {
+    "output_path": "output/",
+    "file_name": "final"
+  },
+  "SignInTest":{
+    "output_path_prefix" : "sign_in",
+    "dependent_module": ["../../modules/web/modules.robot"],
+    "dependent_library": ["SigninPage.py","SignupPage.py"],
+    "test_setups":{
+      "suite_setup":{ "name": "Log","args": ["Inside suite set-up"]},
+      "test_setup":{ "name": "open browser and Load Required Page Objects","args": []},
+      "test_teardown":{ "name": "Capture Screen Shots AND Close Browser","args": []},
+      "suite_teardown":{ "name": "Close All Browsers","args": []}
+  }
+  },
+  "AdminAdvertiser":{
+    "output_path_prefix" : "admin_advertiser",
+    "dependent_module": ["../../modules/web/modules.robot"],
+    "dependent_library": ["AdminAdvertiserHome.py"],
+    "test_setups":{
+    "suite_setup":{ "name": "Log","args": ["suite setup"]},
+    "test_setup":{ "name": "open browser and Load Required Page Objects","args": []},
+    "test_teardown":{ "name": "Capture Screen Shots AND Close Browser","args": []},
+    "suite_teardown":{ "name": "Log","args": ["Inside suite teardown"]}
+  }
+  }
+}

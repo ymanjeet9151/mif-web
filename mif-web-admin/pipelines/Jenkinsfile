@@ -1,0 +1,59 @@
+import com.rivittv.aws.Helpers; //Importing our custom Class from the devOps shared library
+import org.apache.commons.lang.RandomStringUtils; // importing a package to generate a Random String
+
+/**
+* Always make it a point to load the default version of the library which points to the 
+* master branch of git@bitbucket.org:fanchise/devOps
+*/
+@Library("devOps")_ 
+String random = RandomStringUtils.random(2, true, true);
+
+/*THE METHODS*/
+
+void dockerize() { //This method dockerizes the project. We will make use of the branch variable assigned earlier.
+    try {
+        node('master') {
+            /**
+            * Making use of the environment variable assigned by the MultiBranchPipeline to get the branch
+            * being built.
+            */
+            withFolderProperties {
+                String accountID = env.accountID
+                String branch = BRANCH_NAME; 
+                Map input = new TreeMap<>();
+                String base = env.service;
+                String environment = env.environment;
+                String project = env.service;
+                String hosting = env.hosting
+                String bucketName = env.bucketName
+               
+                input.branch = branch;
+                input.base = base;
+                input.environment = environment;
+                input.project = project;
+                input.hosting= hosting
+                input.bucketName= bucketName
+                withAWS(role: "arn:aws:iam::${accountID}:role/shared-rivittv-jenkins-assumable-role") {
+                    dockerRun(input);
+                }
+            }
+        }
+    }
+    catch (Exception exception) {
+        throw new Exception("Something bad happened==> "+exception.getMessage());
+    }
+    finally {
+        node ('master') {
+            withFolderProperties {
+                stage('Clean Up') {
+                    images = [
+                        "docker_"+service+":latest"
+                    ]
+                    cleanUpDockerImages(images);
+                }
+            }
+        }
+    }
+};
+dockerize();
+println 'Nothing to do sport!!!!'

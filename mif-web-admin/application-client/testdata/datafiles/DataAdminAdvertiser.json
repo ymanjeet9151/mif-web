@@ -1,0 +1,110 @@
+[
+    {
+        "advertiser": {
+            "data": {
+                "Email_Address": "jemkemas@example.net",
+                "company_site_url": "https://www.jemkemas.com/",
+                "first_name": "jems",
+                "last_name": "max",
+                "company_name": "jemkem",
+                "primary_company_address": {
+                    "primary_contact_name": "Christophertests",
+                    "primary_contact_email": "jemkem@mail.com",
+                    "address_1": "885 Joseph Rapid Suite 077",
+                    "address_2": "berg",
+                    "city": "Luisview",
+                    "zipcode": 17615,
+                    "state": "NY",
+                    "province": "london",
+                    "country": " United States "
+                },
+                "Secondary_company_address1": {
+                    "primary_contact_name": "niks",
+                    "primary_contact_email": "niks@gmail.com",
+                    "address_1": "885 Joseph Rapid Suite 077",
+                    "address_2": "berg",
+                    "city": "Luisview",
+                    "zipcode": 17615,
+                    "state": "NY",
+                    "province": "london",
+                    "country": " United States "
+                },
+                "Secondary_company_address2": {
+                    "primary_contact_name": "niks",
+                    "primary_contact_email": "niks@gmail.com",
+                    "address_1": "885 Joseph Rapid Suite 077",
+                    "address_2": "berg",
+                    "city": "Luisview",
+                    "zipcode": 17615,
+                    "state": "NY",
+                    "province": "london",
+                    "country": " United States "
+                }
+            }
+        },
+        "product": {
+            "data": {
+                "name": "jemkems products",
+                "product_category": "Channel",
+                "brand": "Samsung galaxy",
+                "tagline": "Sharable discrete",
+                "tags": "responsibility",
+                "country_of_origin": "United States",
+                "adv_pricing_model": "cost per sale (CPS)",
+                "adv_pricing_model_amount": 10000,
+                "adv_min_spend_amount": 10000,
+                "spend_limit_type ": "yearly",
+                "number_of_periods": 1,
+                "unit_cost_type": "Email Offer Delivery",
+                "unit_cost_amount": 10000
+            }
+        },
+        "contract": {
+            "data": {
+                "name": "jemkems",
+                "description": "architect dot-com applications",
+                "contract_start_date": "02-02-2024",
+                "payment_terms": "Monthly",
+                "reporting_cycle": "Weekly",
+                "currency_code": "USD"
+            }
+        },
+        "product_offer_add": {
+            "data": {
+                "offer_name": "jemkems",
+                "ads_offer_desc": "Creative Innovations Logointegrate turn-key vortals",
+                "email_type_offer_logo_name": "Creative Studios Logoes",
+                "emailOfferImage_logo_name": "Striking Systems Logoes",
+                "offer_click_link_destination_url": "https://www.jemkem.com/",
+                "email_offer_text": "email text demo",
+                "email_subject_line_text": "email text demo",
+                "email_preview_line_text": "email text demo",
+                "rewardsLinkURL": "thank you for being regular user"
+            }
+        },
+        "campaigns": {
+            "data": {
+                "name": "jemkems",
+                "description": "synthesize 24/365 applications",
+                "start_date": "02-02-2024",
+                "end_date": "30-01-2025",
+                "spend_limit_amt": 1000,
+                "total_budget_amtut": 219604,
+                "number_of_periods": 1,
+                "product_level_spend_limit_amt": "100",
+                "product_tags": "pro tags"
+            }
+        },
+        "product_promotion": {
+            "data": {
+                "promotion_type_id": "1",
+                "promotion_email_count": 1,
+                "promotion_value_amount": "1000",
+                "payment_amount_received": "100",
+                "promotion_email_delivery_count": "1",
+                "payment_email_delivery_count": "10",
+                "modal_display_priority": "3"
+            }
+        }
+    }
+]

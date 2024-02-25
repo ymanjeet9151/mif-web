@@ -1,0 +1,30 @@
+{
+  "Id": "HomePage-TEST",
+  "name": "MIF Automation Tests",
+  "type": "FUNCTIONAL",
+  "testList": [
+    {
+      "test_name": "Validate Admin should be able to Login to Admin advertiser",
+      "testRunEnabled": true,
+      "testDescription": "",
+      "parentType": "page",
+      "base_URL": "dev-mifadmin.makeitfree",
+      "keywords": [
+        {
+          "name": "Launch an Application",
+          "args": [
+            "login",
+            "SigninPage"
+          ]
+        },
+        {
+          "name": "User Able to login to an Application",
+          "args": [
+            "mifadmin@makeitfree.com",
+            "Test@12345"
+          ]
+        }
+      ]
+    }
+  ]
+}

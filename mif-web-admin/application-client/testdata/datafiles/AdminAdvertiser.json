@@ -1,0 +1,92 @@
+{
+    "Id": "HomePage-TEST",
+    "name": "MIF Automation Tests",
+    "type": "FUNCTIONAL",
+    "testList": [
+        {
+            "test_name": "Validate User should be able to Activate the Campaign",
+            "testRunEnabled": true,
+            "testDescription": "",
+            "parentType": "page",
+            "base_URL": "dev-mifadmin.makeitfree",
+            "keywords": [
+                {
+                    "name": "User Launch an Application",
+                    "args": [
+                        "login",
+                        "SigninPage"
+                    ]
+                },
+                {
+                    "name": "User Able to login to an Application",
+                    "args": [
+                        "mifadmin@makeitfree.com",
+                        "Test@12345"
+                    ]
+                },
+                {
+                    "name": "User Selects Platform",
+                    "args": [
+                        "advertiser_platform"
+                    ]
+                },
+                {
+                    "name": "User Add New Admin advertisers",
+                    "args": [
+                        "add_new_advertiser",
+                        "advertiser"
+                    ]
+                },
+                {
+                    "name": "The Application Should Be Redirected on AdvertiserList",
+                    "args": []
+                },
+                {
+                    "name": "User Selects Contract Financial Menu Under Advtr Name",
+                    "args": []
+                },
+                {
+                    "name": "User create a new Contract/Financial Terms",
+                    "args": [
+                        "contract",
+                        "product",
+                        "add_product"
+                    ]
+                },
+                {
+                    "name": "User Save & Activate Contract",
+                    "args": []
+                },
+                {
+                    "name": "User craetes Product Offer Ads/Assets",
+                    "args": [
+                        "product_offer_add",
+                        "Email Offer",
+                        "Offer Logo",
+                        "Email Offer Image"
+                    ]
+                },
+                {
+                    "name": "User creates the Campagin",
+                    "args": [
+                        "campaigns",
+                        "monthly"
+                    ]
+                },
+                {
+                    "name": "User Commit Campaign and Set Financials/Promotions",
+                    "args": [
+                        "product_promotion"
+                    ]
+                },
+                {
+                    "name": "User Approve and Activate the campagin",
+                    "args": [
+                        "campaigns",
+                        "CAMPAIGN_STATUS_APPROVED"
+                    ]
+                }
+            ]
+        }
+    ]
+}
